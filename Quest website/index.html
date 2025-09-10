@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quest</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Pixel forest background */
+/* Pixel forest background */
+body {
+  position: relative;
+  color: #f8f9fa;
+  font-family: 'Press Start 2P', cursive;
+  overflow-x: hidden;
+  /* ❌ remove this, it covers your blurred image
+  background: linear-gradient(to bottom, #1e3a34, #2d5a3f, #3f7f53, #6aa84f); 
+  */
+}
+
+/* Blurred background image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("back.jpg") center center/cover no-repeat;
+  filter: blur(6px) brightness(0.7);
+  z-index: -2;
+}
+
+/* Overlay gradient for readability */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000cc, #000000cc, #070707cc, #000000cc);
+  z-index: -1;
+}
+
+
+    header {
+      background: linear-gradient(90deg, #ffcc33, #ff9933);
+      color: #222;
+    }
+
+    h1, h2 {
+      color: #030303;
+    }
+     h3{
+        color: #ff9100;
+     }
+
+    .card {
+      border: 2px solid #ffcc33;
+      background-color: rgba(34, 51, 34, 0.9);
+    }
+
+    .btn-primary {
+      background-color: #ff9933;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #cc6600;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #ffcc33, #ff9933);
+    }
+  </style>
+  <!-- Pixel font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="p-5 text-center">
+    <h1 class="fw-bold">🎮 Quest 🎮</h1>
+    <p class="mb-0 fs-6">A New Growtopia Private Server Experience</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="container text-center py-5">
+    <h3 class="fw-bold mb-4">Welcome to Quest</h3>
+    <p class="lead">
+      🎮✨ A Growtopia Private Server focused on quests, challenges, and grinding — <br>
+      No cash grabs, no pay-to-win. Just fun and skill. 🚀
+    </p>
+    <a href="https://discord.gg/dtxzJzkXR8" target="_blank" class="btn btn-lg btn-primary mt-3">
+      💬 Join Our Discord Community
+    </a>
+  </section>
+
+  <!-- Description -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card text-light h-100">
+          <div class="card-body">
+            <h3 class="card-title">⚔️ About Quest</h3>
+            <p class="card-text">
+              Quest is built for players who want to enjoy Growtopia the way it was meant to be —
+              through quests, challenges, and grinding.
+            </p>
+            <ul>
+              <li>✨ Take on quests and activities</li>
+              <li>✨ Grind and grow step by step</li>
+              <li>✨ Achieve goals through dedication</li>
+              <li>⚔️ Prove yourself at the top</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card text-light h-100">
+          <div class="card-body">
+            <h3 class="card-title">🌟 Why Play Quest?</h3>
+            <ul>
+              <li>✅ Play to grind, not to pay</li>
+              <li>✅ Fun quests & activities</li>
+              <li>✅ Fair community</li>
+              <li>✅ Compete with real skill</li>
+            </ul>
+            <p>🌟 Make Growtopia fun again — no shortcuts, no pay-to-win, only true effort.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Play Section -->
+  <section class="container py-5 text-center">
+    <h3 class="fw-bold mb-4">📖 How to Play</h3>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <button class="btn btn-lg btn-primary w-100" data-bs-toggle="modal" data-bs-target="#androidModal">📱 Android</button>
+      </div>
+      <div class="col-6 col-md-3">
+        <button class="btn btn-lg btn-success w-100" data-bs-toggle="modal" data-bs-target="#windowsModal">💻 Windows</button>
+      </div>
+      <div class="col-6 col-md-3">
+        <button class="btn btn-lg btn-danger w-100" data-bs-toggle="modal" data-bs-target="#iosModal">🍏 iOS</button>
+      </div>
+      <div class="col-6 col-md-3">
+        <button class="btn btn-lg btn-warning w-100" data-bs-toggle="modal" data-bs-target="#macModal">🍎 Mac</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <!-- Android -->
+  <div class="modal fade" id="androidModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title">📱 Android Setup</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-start">
+          <ol>
+            <li>Download Virtual Hosts <a href="https://www.apkmirror.com/apk/xfalcon/virtual-hosts/virtual-hosts-2-1-0-release/virtual-hosts-2-1-0-android-apk-download/" target="_blank">[Download]</a></li>
+            <li>Install Virtual Hosts on your device</li>
+            <li>Download hosts file <a href="https://www.mediafire.com/file/4hbn8cmw4nhmirv/QuestHost.txt/file" target="_blank">QuestHost.txt</a></li>
+            <li>Open Virtual Hosts → Select hosts file → Enable it</li>
+            <li>Done! Server name: <strong>Quest</strong></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Windows -->
+  <div class="modal fade" id="windowsModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title">💻 Windows Setup</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-start">
+          <ol>
+            <li>Press <kbd>Win + R</kbd>, type <code>C:\Windows\System32\drivers\etc</code></li>
+            <li>Edit file <strong>hosts</strong> with Notepad</li>
+            <li>Add these lines:
+              <pre class="bg-secondary p-2 rounded mt-2">91.134.85.13 growtopia1.com
+91.134.85.13 growtopia2.com
+91.134.85.13 www.growtopia1.com
+91.134.85.13 www.growtopia2.com</pre>
+            </li>
+            <li>Save file → Launch Growtopia</li>
+            <li>Server name: <strong>Quest</strong></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- iOS -->
+  <div class="modal fade" id="iosModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title">🍏 iOS Setup</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-start">
+          <ol>
+            <li>Download Surge 5 from App Store</li>
+            <li>Click Default.conf → Import Profile → Paste URL: 
+              <a href="https://growsoft.cc/ios.txt" target="_blank">iOS Host</a></li>
+            <li>Allow VPN setup → Open Growtopia</li>
+            <li>Server name: <strong>Quest</strong></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mac -->
+  <div class="modal fade" id="macModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title">🍎 Mac Setup</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Edit <code>/etc/hosts</code> file just like Windows and add the same IP addresses.  
+          Save → Launch Growtopia → Connect to <strong>Quest</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 mt-5 text-muted small">
+    © 2025 Quest Server. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
